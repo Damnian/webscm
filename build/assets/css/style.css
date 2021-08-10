@@ -16,10 +16,6 @@
   min-height: 100vh;
 }
 
-.main-logo {
-  max-width: 100%;
-}
-
 .investor {
   background: url("../images/home-background.jpg") center/cover no-repeat;
   color: #fff;
@@ -29,10 +25,6 @@
   list-style-position: inside;
   font-size: 1.5em;
 }
-.roof-choice-list li img {
-  max-width: 100%;
-}
-
 .covering-list__item {
   position: relative;
 }

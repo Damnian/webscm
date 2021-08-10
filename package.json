@@ -1,7 +1,7 @@
 {
   "name": "zamowienia-online",
   "version": "1.0.0",
-  "description": "",
+  "description": "Node:\r przejście do projektu\r npm init\r npm install -g gulp\r npm install gulp --save-dev",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,7 +23,16 @@
     "Safari >= 8"
   ],
   "dependencies": {
+    "@popperjs/core": "^2.9.3",
     "bootstrap": "^5.0.0-beta3",
     "popper.js": "^1.16.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Damnian/webscm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Damnian/webscm/issues"
+  },
+  "homepage": "https://github.com/Damnian/webscm#readme"
 }
