@@ -1,0 +1,162 @@
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+		Title
+	</title>
+	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../assets/css/style.css">
+	<link rel="stylesheet" href="../assets/css/pikto.css">
+</head>
+
+<body>
+
+	<main class="d-flex flex-column main" id="main">
+		
+
+		<header class="header">
+			<div class="header__bar--navy">
+				<div class="container-xxl">
+					<div class="row justify-content-between align-items-center py-2">
+						<!-- rodzaj logo uzależnić od widoku -->
+						<!-- jeśli granatowe, to logo białe -->
+						<div class="col-6 col-md-3 col-lg-3">
+							<a href="/1-home/">
+								<img src="../assets/images/logo-budmat-poziom.png" alt="Logo Budmat Bogdan Więcek" class="main-logo">
+							</a>
+						</div>
+
+						<!-- zaloguj uzależnić od widoku  (if main-home -> hide) -->
+						<div class="col-3 col-md-1 col-lg-1 text-center ms-auto">
+							<a href="#">
+								Zaloguj
+							</a>
+						</div>
+
+						<div class="col-3 col-md-2 col-lg-2">
+							<nav class="language-nav" id="language-nav">
+								<select name="language" class="form-select" id="language-select">
+							    <option value="PL" class="language-option">PL</option>
+							    <option value="EN" class="language-option">EN</option>
+							    <option value="DE" class="language-option">DE</option>
+								</select>
+							</nav>
+						</div>
+					</div> <!-- end of row -->
+				</div>
+			</div>
+
+			<!-- background bar uzależnić od widoku -->
+			<!-- jeśli home, to brak poniższego -->
+			<div class="header__bar--dark-navy text-white">
+				<div class="container-xxl">
+				<!-- navigację uzależnić od widoku (if main-home -> hide) -->
+
+					<nav class="navbar roof-personalization-nav" id="roof-personalization-nav">
+						<div class="col-12 text-end">
+							<button class="d-lg-none navbar-toggler navbar-dark ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+	      				<span class="navbar-toggler-icon"></span>
+	    				</button>
+						</div>
+
+						<div class="collapse d-lg-block col-lg-12" id="navbarToggleExternalContent">
+							<ul class="list-unstyled m-0">
+								<li class="px-2">
+									Personalizacja dachu
+								</li>
+								<li class="px-2">
+									Pokrycie dachowe
+								</li>
+								<li class="px-2">
+									Akcesoria
+								</li>
+								<li class="px-2">
+									Systemy rynnowe
+								</li>
+								<li class="px-2">
+									Podsufitka
+								</li>
+								<li class="px-2">
+									Podsumowanie
+								</li>
+							</ul>
+						</div>
+					</nav>
+			</div> <!-- end of container-xxl -->
+		</div>
+	</header> 
+
+
+	<div class="container-xxl py-5 my-auto">
+		<h2>
+			Personalizacja dachu
+		</h2>
+		<p>
+			Podaj wymiary pokrycia dachowego
+		</p>
+
+		<div class="row">
+			<p class="col-lg-2">
+				Nachylenie połaci dachu:
+			</p>
+			<div class="col-lg-10">
+				<select name="tilt" class="tilt-select" id="tilt-select">
+					<option value="Kąt nachylenia<" class="tilt-option">Kąt nachylenia</option>
+					<option value="Procent spadku" class="tilt-option">Procent spadku</option>
+					<option value="Wymiary rzeczywiste" class="tilt-option">Wymiary rzeczywiste</option>
+				</select>
+				<input type="number" min="0" max="100" value="35">
+			</div>
+		</div>
+
+		<div class="row">
+			<p class="col-lg-2">
+				Typ zabudowy:
+			</p>
+			<div class="col-lg-10">
+				<select name="building-type" class="building-type" id="building-type-select">
+					<option value="Wolnostojąca<" class="building-type-option">Wolnostojąca</option>
+					<option value="Bliźniak" class="building-type-option">Bliźniak</option>
+					<option value="Szeregowa" class="building-type-option">Szeregowa</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="row">
+			<p class="col-lg-2">
+				Dodaj lukarnę:
+			</p>
+			<div class="col-lg-10"> 
+				<input type="checkbox" id="left" name="left">
+				<label for="left">Lewa</label>
+				<input type="checkbox" id="right" name="right">
+				<label for="right">Prawa</label>
+				<input type="checkbox" id="top" name="top">
+				<label for="top">Górna</label>
+				<input type="checkbox"id="bottom" name="bottom">
+				<label for="bottom">Dolna</label>
+			</div>
+		</div>
+	</div> <!-- end of container-xxl -->
+
+	<div class="container-xxl pb-5">
+		<img src="../assets/images/1920x1080.jpg" alt="" style="max-width: 100%;">
+	</div><!-- end of container-xxl -->
+
+	<div class="container-xxl text-end">
+		<!-- ukryć button wstecz w zależności od widoku -->
+		<button class="btn btn-primary rounded-0 rounded-top fit-content text-white">
+			Wstecz
+		</button>
+
+		<button class="btn btn-success rounded-0 rounded-top fit-content text-white">
+			Następny krok
+		</button>
+	</div> <!-- end of container-xxl -->
+
+	</main> <!-- end of main -->
+
+	</body>
+</html>

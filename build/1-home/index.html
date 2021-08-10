@@ -1,0 +1,183 @@
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+		Title
+	</title>
+	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../assets/css/style.css">
+	<link rel="stylesheet" href="../assets/css/pikto.css">
+</head>
+
+<body>
+
+	<main class="d-flex flex-column main main-home" id="main">
+
+
+		<header class="header">
+			<div class="header__bar--navy">
+				<div class="container-xxl">
+					<div class="row justify-content-between align-items-center py-2">
+						<!-- rodzaj logo uzależnić od widoku -->
+						<!-- jeśli granatowe, to logo białe -->
+						<div class="col-6 col-md-3 col-lg-3">
+							<a href="/1-home/">
+								<img src="../assets/images/logo-budmat-poziom.png" alt="Logo Budmat Bogdan Więcek" class="main-logo">
+							</a>
+						</div>
+
+						<!-- zaloguj uzależnić od widoku  (if main-home -> hide) -->
+						<div class="col-3 col-md-1 col-lg-1 text-center ms-auto">
+							<a href="#">
+								Zaloguj
+							</a>
+						</div>
+
+						<div class="col-3 col-md-2 col-lg-2">
+							<nav class="language-nav" id="language-nav">
+								<select name="language" class="form-select" id="language-select">
+							    <option value="PL" class="language-option">PL</option>
+							    <option value="EN" class="language-option">EN</option>
+							    <option value="DE" class="language-option">DE</option>
+								</select>
+							</nav>
+						</div>
+					</div> <!-- end of row -->
+				</div>
+			</div>
+
+			<!-- background bar uzależnić od widoku -->
+			<!-- jeśli home, to brak poniższego -->
+			<div class="header__bar--dark-navy text-white">
+				<div class="container-xxl">
+				<!-- navigację uzależnić od widoku (if main-home -> hide) -->
+
+					<nav class="navbar roof-personalization-nav" id="roof-personalization-nav">
+						<div class="col-12 text-end">
+							<button class="d-lg-none navbar-toggler navbar-dark ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+	      				<span class="navbar-toggler-icon"></span>
+	    				</button>
+						</div>
+
+						<div class="collapse d-lg-block col-lg-12" id="navbarToggleExternalContent">
+							<ul class="list-unstyled m-0">
+								<li class="px-2">
+									Personalizacja dachu
+								</li>
+								<li class="px-2">
+									Pokrycie dachowe
+								</li>
+								<li class="px-2">
+									Akcesoria
+								</li>
+								<li class="px-2">
+									Systemy rynnowe
+								</li>
+								<li class="px-2">
+									Podsufitka
+								</li>
+								<li class="px-2">
+									Podsumowanie
+								</li>
+							</ul>
+						</div>
+					</nav>
+			</div> <!-- end of container-xxl -->
+		</div>
+	</header> 
+
+
+		<div class="container-xxl d-flex flex-grow-1 flex-shrink-1">
+			<div class="row flex-grow-1 flex-shrink-1 align-items-center">
+				<div class="col-lg-5 px-5 py-5 d-flex flex-column order-2 order-lg-1 flex-grow-1 flex-shrink-1 dealer">
+					<h2>
+						Jestem<br>
+						Dealerem / Dekarzem
+					</h2>
+
+					<hr>
+
+					<label for="login-input">
+						Login / email
+					</label>
+					<input type="email" class="mb-3" id="login-input" placeholder="jan.kowalski@gmail.com">
+
+					<label for="password-input">
+						Hasło
+					</label>
+					<input type="text" class="mb-3" id="password-input" placeholder="*************">
+
+					<div class="row my-3">
+						<div class="col-md-6">
+							<input type="checkbox" id="remember-checkbox">
+							<label for="remember-checkbox">
+								Zapamiętaj mnie
+							</label>
+						</div>
+						
+						<div class="col-md-6">
+							<a href="#" id="forgotten-password">
+								Zapomniałeś hasła?
+							</a>
+						</div>
+					</div>
+
+					<div class="row my-3">
+						<div class="col-md-6">
+							<button class="btn btn-success rounded-pill fit-content" id="login-btn">
+								Zaloguj
+							</button>
+						</div>
+						<div class="col-md-6">
+							<p>
+								Nie masz konta?<br>
+								<a href="#">
+									Zarejestruj się!
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-7 px-5 py-5 d-flex flex-column order-1 order-lg-2 flex-grow-1 flex-shrink-1 investor">
+					<h2>
+						Jestem<br>
+						Inwestorem
+					</h2>
+
+					<hr>
+
+					<ul class="list-unstyled investor-benefits-list">
+						<li>
+							Skonfiguruj swój dach
+						</li>
+						<li>
+							Znajdź najbliższego dealera
+						</li>
+						<li>
+							Zapytaj o darmową wycenę
+						</li>
+						<li>
+							Nie potrzeba rejestracji
+						</li>
+					</ul>
+
+					<button class="btn btn-success rounded-pill fit-content" id="XYZ">
+						Przejdź do konfiguratora
+					</button>
+
+					<!-- do podglądu dla mnie /DL -->
+					<a class="btn btn-success rounded-pill fit-content" id="XYZ" href="/2-typ dachu">
+						Przejdź do konfiguratora
+					</a>
+					<!-- en of /DL -->
+				</div>
+			</div>
+		</div>
+	</main> <!-- end of main -->
+
+
+	</body>
+</html>
