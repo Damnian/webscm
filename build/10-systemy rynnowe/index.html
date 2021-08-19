@@ -92,64 +92,147 @@
 
 
 	<div class="container-xxl py-5 my-auto">
-		<div class="row">
-			<div class="col-12">	
+		<div class="row justify-content-between">
+			<div class="col-12 col-sm-6">
 				<h2>
-					Personalizacja dachu
+					System rynnowy
 				</h2>
 				<p class="text-secondary">
-					Podaj wymiary pokrycia dachowego
+					Dostosuj system rynnowy
 				</p>
 			</div>
-		</div>
+
+			<div class="col-12 col-sm-6 col-md-3">
+				<div class="container p-2 mb-2 rounded" style="background: #E9B449">
+					<div class="row align-items-center">
+						<div class="col-4">
+							<img src="../assets/icons/icon-star.svg" alt="" class="img-fluid">
+						</div>
+						<div class="col-8 text-end">
+							<p class="m-0">
+								Twoja obecna gwarancja wynosi: XY lat
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> <!-- end of row -->	
 
 		<div class="row">
 			<p class="col-lg-2">
-				Nachylenie połaci dachu:
+				Wysokość elewacji:
 			</p>
 			<div class="col-lg-10">
-				<select name="tilt" class="tilt-select" id="tilt-select">
-					<option value="Kąt nachylenia<" class="tilt-option">Kąt nachylenia</option>
-					<option value="Procent spadku" class="tilt-option">Procent spadku</option>
-					<option value="Wymiary rzeczywiste" class="tilt-option">Wymiary rzeczywiste</option>
-				</select>
-				<input type="number" min="0" max="100" value="35">
+				<div class="input-cm">
+					<input type="number" min="0" value="300" class="text-center">
+				</div>
 			</div>
-		</div>
+		</div> <!-- end of row -->	
+
+		<hr class="my-4">
 
 		<div class="row">
-			<p class="col-lg-2">
-				Typ zabudowy:
-			</p>
-			<div class="col-lg-10">
-				<select name="building-type" class="building-type" id="building-type-select">
-					<option value="Wolnostojąca<" class="building-type-option">Wolnostojąca</option>
-					<option value="Bliźniak" class="building-type-option">Bliźniak</option>
-					<option value="Szeregowa" class="building-type-option">Szeregowa</option>
-				</select>
+			<div class="col-12 col-md-4">
+				<p>
+					Wybierz rozmiar systemu
+				</p>
+				<div class="container-fluid">
+					<div class="row text-center">
+						<div class="col-4">
+							125/90
+							<br>
+							(100)
+							<br>
+							<small>
+								30 lat gwarancji systemu
+							</small>
+						</div>
+						<div class="col-4">
+							135/90
+							<br>
+							(100)
+							<br>
+							<small>
+								30 lat gwarancji systemu
+							</small>
+						</div>
+						<div class="col-4">
+							150/90
+							<br>
+							(100)
+							<br>
+							<small>
+								30 lat gwarancji systemu
+							</small>
+							<br>
+							<small>
+								Rekomendowany rozmiar
+							</small>
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
 
-		<div class="row">
-			<p class="col-lg-2">
-				Dodaj lukarnę:
-			</p>
-			<div class="col-lg-10"> 
-				<input type="checkbox" id="left" name="left">
-				<label for="left">Lewa</label>
-				<input type="checkbox" id="right" name="right">
-				<label for="right">Prawa</label>
-				<input type="checkbox" id="top" name="top">
-				<label for="top">Górna</label>
-				<input type="checkbox"id="bottom" name="bottom">
-				<label for="bottom">Dolna</label>
+			<div class="col-12 col-md-8">
+				<p>
+					Wybierz kolor
+				</p>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-4 col-md-2 text-center">
+							<img src="../assets/images/color-7024-grafitowy.png" alt="" class="img-fluid">
+							<p class="my-2">
+								Nazwa koloru<br>numer<br>ral
+							</p>
+						</div>
+						<div class="col-4 col-md-2 text-center">
+							<img src="../assets/images/color-8004-ceglasty.png" alt="" class="img-fluid">
+							<p class="my-2">
+								Nazwa koloru<br>numer<br>ral
+							</p>
+						</div>
+						<div class="col-4 col-md-2 text-center">
+							<img src="../assets/images/color-9005-czarny.png" alt="" class="img-fluid">
+							<p class="my-2">
+								Nazwa koloru<br>numer<br>ral
+							</p>
+						</div>
+						<div class="col-4 col-md-2 text-center">
+							<img src="../assets/images/color-8017-brazowy.png" alt="" class="img-fluid">
+							<p class="my-2">
+								Nazwa koloru<br>numer<br>ral
+							</p>
+						</div>
+						<div class="col-4 col-md-2 text-center">
+							<img src="../assets/images/color-7016-antracytowy.png" alt="" class="img-fluid">
+							<p class="my-2">
+								Nazwa koloru<br>numer<br>ral
+							</p>
+						</div>
+						<div class="col-4 col-md-2 text-center">
+							<img src="../assets/images/color-7016-antracytowy.png" alt="" class="img-fluid">
+							<p class="my-2">
+								Nazwa koloru<br>numer<br>ral
+							</p>
+						</div>
+						<div class="col-4 col-md-2 text-center">
+							<img src="../assets/images/color-7016-antracytowy.png" alt="" class="img-fluid">
+							<p class="my-2">
+								Nazwa koloru<br>numer<br>ral
+							</p>
+						</div>
+						<div class="col-4 col-md-2 text-center">
+							<img src="../assets/images/color-7016-antracytowy.png" alt="" class="img-fluid">
+							<p class="my-2">
+								Nazwa koloru<br>numer<br>ral
+							</p>
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
-	</div> <!-- end of container-xxl -->
+		</div> <!-- end of row -->	
 
-	<div class="container-xxl pb-5">
-		<img src="../assets/images/1920x1080.jpg" alt="" class="img-fluid">
-	</div><!-- end of container-xxl -->
+	</div>
 
 	<div class="container-xxl text-end">
 		<!-- ukryć button wstecz w zależności od widoku -->

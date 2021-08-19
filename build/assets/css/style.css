@@ -12,6 +12,20 @@
   background: #163364;
 }
 
+.input-cm::after {
+  content: "cm";
+}
+.input-cm input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  margin: 0;
+}
+.input-cm input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  margin: 0;
+}
+
 .main {
   min-height: 100vh;
 }
@@ -21,10 +35,17 @@
   color: #fff;
 }
 .investor-benefits-list li {
-  list-style-image: url("../icons/icon-check-simple.svg");
-  list-style-position: inside;
   font-size: 1.5em;
 }
+.investor-benefits-list li::before {
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  padding-right: 3px;
+  font-weight: 900;
+  color: #4AC84E;
+  font-size: 40px;
+}
+
 .covering-list__item {
   position: relative;
 }
@@ -39,6 +60,57 @@
   background: -webkit-gradient(linear, left top, left bottom, from(#1C407D), color-stop(1%, #1C407D), to(rgba(255, 255, 255, 0)));
   background: -o-linear-gradient(top, #1C407D 0%, #1C407D 1%, rgba(255, 255, 255, 0) 100%);
   background: linear-gradient(180deg, #1C407D 0%, #1C407D 1%, rgba(255, 255, 255, 0) 100%);
+}
+
+/* Force table to not be like tables anymore */
+#no-more-tables table,
+#no-more-tables thead,
+#no-more-tables tbody,
+#no-more-tables th,
+#no-more-tables td,
+#no-more-tables tr {
+  display: block;
+}
+
+/* Hide table headers (but not display: none;, for accessibility) */
+#no-more-tables thead tr {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+#no-more-tables tr {
+  border: 1px solid #ccc;
+}
+
+#no-more-tables td {
+  /* Behave  like a "row" */
+  border: none;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  padding-left: 50%;
+  white-space: normal;
+  text-align: left;
+}
+
+#no-more-tables td:before {
+  /* Now like a table header */
+  position: absolute;
+  /* Top/left values mimic padding */
+  top: 6px;
+  left: 6px;
+  width: 45%;
+  padding-right: 10px;
+  white-space: nowrap;
+  text-align: left;
+  font-weight: bold;
+}
+
+/*
+Label the data
+*/
+#no-more-tables td:before {
+  content: attr(data-title);
 }
 
 @media (min-width: 992px) {
