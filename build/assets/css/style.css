@@ -26,6 +26,17 @@
   margin: 0;
 }
 
+.input-discount::-webkit-outer-spin-button, .input-price::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  margin: 0;
+}
+.input-discount::-webkit-inner-spin-button, .input-price::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  margin: 0;
+}
+
 .main {
   min-height: 100vh;
 }
@@ -62,38 +73,37 @@
   background: linear-gradient(180deg, #1C407D 0%, #1C407D 1%, rgba(255, 255, 255, 0) 100%);
 }
 
+.tfoot {
+  background: #163364;
+}
+
 /* Force table to not be like tables anymore */
-#no-more-tables table,
-#no-more-tables thead,
-#no-more-tables tbody,
-#no-more-tables th,
-#no-more-tables td,
-#no-more-tables tr {
+.summary-table table,
+.summary-table thead,
+.summary-table tbody,
+.summary-tables th,
+.summary-table td,
+.summary-table tr,
+.summary-table tr th,
+.summary-table tfoot {
   display: block;
 }
 
 /* Hide table headers (but not display: none;, for accessibility) */
-#no-more-tables thead tr {
+.summary-table thead tr {
   position: absolute;
   top: -9999px;
   left: -9999px;
 }
 
-#no-more-tables tr {
-  border: 1px solid #ccc;
-}
-
-#no-more-tables td {
+.summary-table td {
   /* Behave  like a "row" */
-  border: none;
-  border-bottom: 1px solid #eee;
   position: relative;
-  padding-left: 50%;
   white-space: normal;
-  text-align: left;
+  text-align: right;
 }
 
-#no-more-tables td:before {
+.summary-table td:before {
   /* Now like a table header */
   position: absolute;
   /* Top/left values mimic padding */
@@ -109,11 +119,46 @@
 /*
 Label the data
 */
-#no-more-tables td:before {
+.summary-table td:before {
   content: attr(data-title);
 }
 
 @media (min-width: 992px) {
+  /* Force table to not be like tables anymore */
+  .summary-table table {
+    display: table;
+  }
+
+  .summary-table thead {
+    display: table-header-group;
+  }
+
+  .summary-table tbody {
+    display: table-row-group;
+  }
+
+  .summary-table th,
+.summary-table tr th,
+.summary-table td {
+    display: table-cell;
+  }
+
+  .summary-table tr {
+    display: table-row;
+  }
+
+  .summary-table tfoot {
+    display: table-footer-group;
+  }
+
+  .summary-table td:before {
+    display: none;
+  }
+
+  .summary-table thead tr {
+    position: static;
+  }
+
   .investor {
     background: transparent;
   }

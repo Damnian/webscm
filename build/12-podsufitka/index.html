@@ -24,22 +24,22 @@
 					<div class="row justify-content-between align-items-center py-2">
 						<!-- rodzaj logo uzależnić od widoku -->
 						<!-- jeśli granatowe, to logo białe -->
-						<div class="col-6 col-md-3 col-lg-3">
+						<div class="col">
 							<a href="/1-home/">
 								<img src="../assets/images/logo-budmat-poziom.png" alt="Logo Budmat Bogdan Więcek" class="img-fluid">
 							</a>
 						</div>
 
 						<!-- zaloguj uzależnić od widoku  (if main-home -> hide) -->
-						<div class="col-3 col-md-1 col-lg-1 text-center ms-auto">
-							<a href="#" class="link-light">
+						<div class="col text-end">
+							<a href="#" class="link-light mx-3">
 								Zaloguj
 							</a>
-						</div>
+<!-- 						</div>
 
-						<div class="col-3 col-md-2 col-lg-2">
-							<nav class="language-nav" id="language-nav">
-								<select name="language" class="form-select" id="language-select">
+						<div class="col-3 col-md-2 col-lg-2"> -->
+							<nav class="language-nav d-inline-block" id="language-nav">
+								<select name="language" class="form-select w-auto" id="language-select">
 							    <option value="PL" class="language-option">PL</option>
 							    <option value="EN" class="language-option">EN</option>
 							    <option value="DE" class="language-option">DE</option>
@@ -128,6 +128,31 @@
 				</div>
 			</div>
 		</div> <!-- end of row -->	
+
+		<div class="row">
+			<p class="col-lg-2">
+				Sposób połączenia:
+			</p>
+			<div class="col-lg-10">
+				<select name="connection" class="connection-select" id="connection-select">
+					<option value="Połączenie tradycyjne" class="connection-option">Połączenie tradycyjne</option>
+					<option value='Połączenie "w jodełkę"' class="connection-option">Połączenie "w jodełkę"</option>
+				</select>
+			</div>
+		</div> <!-- end of row -->	
+
+		<div class="row">
+			<p class="col-lg-2">
+				Sposób montażu:
+			</p>
+			<div class="col-lg-10">
+				<select name="installation-method" class="installation-method-select" id="installation-method-select">
+					<option value="Prostopadły do elewacji" class="installation-method-option">Prostopadły do elewacji</option>
+					<option value="Równolegle do połaci dachu" class="installation-method-option">Równoległy do połaci dachu</option>
+				</select>
+			</div>
+		</div> <!-- end of row -->	
+
 
 		<hr class="my-4">
 

@@ -38,7 +38,7 @@ function copyJs() {
 function compressImages() {
 	return gulp.src('src/assets/images/*')
 		.pipe(imagemin())
-		.pipe(gulp.dest('build/assets/images'))
+		.pipe(gulp.dest('build/assets/images/'))
 		.pipe(browserSync.stream());
 };
 
