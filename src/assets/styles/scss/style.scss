@@ -1,0 +1,433 @@
+// changing the theme colors
+$primary: #163364;
+$success: #4AC84E;
+$danger: #ae071f;
+$navy: #1C407D;
+$dark-navy: #163364;
+$white: #fff;
+
+// custom general classes
+.fit-content {
+	width: fit-content;
+}
+
+.header {
+	&__bar {
+		&--navy {
+			background: $navy;
+		}
+		&--dark-navy {
+			background: $dark-navy;
+		}
+	}
+}
+
+.input-cm {
+	&::after {
+	content: "cm";
+	}
+	& input::-webkit-outer-spin-button {
+		-webkit-appearance: none;
+  	-moz-appearance: textfield;
+  	margin: 0;
+	}
+	& input::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+  	-moz-appearance: textfield;
+  	margin: 0;
+	}
+}
+
+.input-discount, .input-price {
+	&::-webkit-outer-spin-button {
+		-webkit-appearance: none;
+  	-moz-appearance: textfield;
+  	margin: 0;
+	}
+	&::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+  	-moz-appearance: textfield;
+  	margin: 0;
+	}
+}
+
+// custom class styles
+.main {
+	min-height: 100vh;
+}
+
+.investor {
+	background: url('../images/home-background.jpg') center/cover no-repeat;
+	color: #fff;
+
+	&__benefits-list {
+
+		& li {
+			font-size: 1.5em;
+
+			&::before {
+				font-family: "Font Awesome 5 Free";
+ 			  content: "\f00c";
+  			// display: inline-block;
+   			padding-right: 3px;
+   			// vertical-align: middle;
+   			font-weight: 900;
+   			color: $success;
+   			font-size: 40px;
+			}
+		}
+	}
+}
+
+.covering-list, .gutter-list {
+	&__item {
+		position: relative;
+	}
+	
+	&__overlay {
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		margin: 0 12px 16px 12px;
+		background: rgb(28,64,125);
+		background: linear-gradient(180deg, $navy 0%, $navy 1%, rgba(255,255,255,0) 100%);
+	}
+}
+
+.tfoot {
+	background: $dark-navy;
+}
+	/* Force table to not be like tables anymore */
+	.summary-table table, 
+	.summary-table thead, 
+	.summary-table tbody, 
+	.summary-tables th, 
+	.summary-table td, 
+	.summary-table tr,
+	.summary-table tr th,
+	.summary-table tfoot { 
+		display: block;
+		// padding: 5px;
+	}
+ 
+	/* Hide table headers (but not display: none;, for accessibility) */
+	.summary-table thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+ 
+	// .summary-table tr { border: 1px solid #ccc; }
+ 
+	.summary-table td { 
+		/* Behave  like a "row" */
+		// border: none;
+		// border-bottom: 1px solid #eee; 
+		position: relative;
+		// padding-left: 50%; 
+		white-space: normal;
+		text-align: right;
+	}
+ 
+	.summary-table td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		text-align: left;
+		font-weight: bold;
+	}
+ 
+	/*
+	Label the data
+	*/
+	.summary-table td:before { 
+		content: attr(data-title);
+	 }
+
+.roof-configurator-nav {
+	& .active {
+		position: relative;
+		&:after {
+	    content: "";
+	    background: $white;
+	    position: absolute;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+	    height: 2px;
+	    margin: auto;
+	    width: 25px;
+		}
+	}
+}
+
+.coating-list, .colors-list {
+	&__item {
+		transition: 0.25s ease-in-out;
+		img, button {
+			transition: 0.25s ease-in-out;
+		}
+	}
+}
+
+
+.coating-list, .colors-list {
+	&__item {
+		&:hover {
+			cursor: pointer;
+			background: $success;
+			color: $white;
+		}
+		&.active {
+			position: relative;
+			background: $success;
+			color: $white;
+			&::after {
+				font-family: "Font Awesome 5 Free";
+ 			  content: "\f00c";
+   			font-weight: 900;
+   			color: $white;
+   			font-size: 20px;
+			}
+		}
+	}
+}
+
+.coating-list {
+	&__item {
+		&.active {
+			img {
+				filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(100deg) brightness(150%) contrast(100%);
+			}
+			button {
+				color: $white;
+			}
+		}
+	}
+}
+
+.roof-choice-list {
+	&__item {
+		cursor: pointer;
+		transition: 0.25s ease-in-out;
+		position: relative;
+		&:hover {
+			opacity: 0.5;
+		}
+		&.active {
+			&::after {
+				font-family: "Font Awesome 5 Free";
+		 		content: "\f00c";
+		   	position: absolute;
+		   	left: 0.5rem;
+		   	bottom: 0.5rem;
+		   	background: $success;
+		   	color: $white;
+		   	font-size: 20px;
+		   	font-weight: 900;
+		   	padding: 5px 10px;
+			}
+			img {
+				border: 5px solid $success;
+			}
+		}
+	}
+}
+
+.package {
+	&__item {
+		cursor: pointer;
+		transition: 0.25s ease-in-out;
+		position: relative;
+		&:hover {
+			opacity: 0.5;
+		}
+		&.active {
+			border: 5px solid $success;
+			&::after {
+				font-family: "Font Awesome 5 Free";
+		 		content: "\f00c";
+		   	position: absolute;
+		   	left: 0;
+		   	bottom: 0;
+		   	background: $success;
+		   	color: $white;
+		   	font-size: 20px;
+		   	font-weight: 900;
+		   	padding: 5px 10px;
+			}
+		}
+	}
+	&__benefits-list {
+		.check {
+			&::before {
+				font-family: "Font Awesome 5 Free";
+ 			  content: "\f00c";
+   			padding-right: 3px;
+   			font-weight: 900;
+   			color: $success;
+   			font-size: 20px;
+			}
+		}
+		.not-check {
+			&::before {
+				font-family: "Font Awesome 5 Free";
+ 			  content: "\f00d";
+   			padding-right: 9px;
+   			font-weight: 900;
+   			color: $danger;
+   			font-size: 20px;
+			}
+		}
+	}	
+}
+
+.accessories-list {
+	&__item {
+		cursor: pointer;
+		transition: 0.25s ease-in-out;
+		position: relative;
+		&:hover {
+			opacity: 0.5;
+		}
+		&.active {
+			img {
+				border: 5px solid $success;
+			}
+		}
+	}
+}
+
+.gutter-list {
+	&__item {
+		cursor: pointer;
+		transition: 0.25s ease-in-out;
+		position: relative;
+		&:hover {
+			opacity: 0.5;
+		}
+		&.active {
+			.gutter-list__overlay {
+				border: 5px solid $success;
+				&::after {
+					font-family: "Font Awesome 5 Free";
+			 		content: "\f00c";
+			   	position: absolute;
+			   	left: 0;
+			   	bottom: 0;
+			   	background: $success;
+			   	color: $white;
+			   	font-size: 20px;
+			   	font-weight: 900;
+			   	padding: 5px 10px;
+				}
+			}
+		}
+	}
+}
+
+.covering-list {
+	&__item {
+		cursor: pointer;
+		transition: 0.25s ease-in-out;
+		position: relative;
+		&:hover {
+			opacity: 0.5;
+		}
+		&.active {
+			.covering-list__overlay {
+				border: 5px solid $success;
+				&::after {
+					font-family: "Font Awesome 5 Free";
+			 		content: "\f00c";
+			   	position: absolute;
+			   	left: 0;
+			   	bottom: 0;
+			   	background: $success;
+			   	color: $white;
+			   	font-size: 20px;
+			   	font-weight: 900;
+			   	padding: 5px 10px;
+				}
+			}
+		}
+	}
+}
+
+
+// end of custom class styles
+
+// media queries
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+	/* Force table to not be like tables anymore */
+	.summary-table table {
+		display: table;
+	}
+	.summary-table thead {
+		display: table-header-group;
+	} 
+	.summary-table tbody {
+		display: table-row-group;
+	}
+	.summary-table th,
+	.summary-table tr th,
+	.summary-table td {
+		display: table-cell;
+	}
+	.summary-table tr {
+		display: table-row;
+	}
+		.summary-table tfoot {
+		display: table-footer-group;
+	}
+
+	.summary-table td:before { 
+		display: none;
+	 }
+	.summary-table thead tr { 
+		position: static;
+	}
+
+
+	.investor {
+		background: transparent;
+	}
+
+	.main {
+		&-home {
+			background: url('../images/home-background.jpg') 40vw/cover no-repeat;
+		}
+	}
+
+	.roof-configurator-nav ul li {
+		display: inline-block;
+	}
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 1400px) {
+	.main-home {
+		background: url('../images/home-background.jpg') 45vw/cover no-repeat;
+	}
+}
+
+@import './node_modules/bootstrap/scss/bootstrap.scss';

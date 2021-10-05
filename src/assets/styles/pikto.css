@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'pikto';
+  src:  url('../fonts/pikto.eot?w4zb4m');
+  src:  url('../fonts/pikto.eot?w4zb4m#iefix') format('embedded-opentype'),
+    url('../fonts/pikto.ttf?w4zb4m') format('truetype'),
+    url('../fonts/pikto.woff?w4zb4m') format('woff'),
+    url('../fonts/pikto.svg?w4zb4m#pikto') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'pikto' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* ulozenie middle*/
+  vertical-align: middle;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-blachy-trapezowe-i-elewacyjne:before {
+  content: "\e001";
+}
+.icon-profile-i-akcesoria:before {
+  content: "\e002";
+}
+.icon-systemy-ogrodzen:before {
+  content: "\e003";
+}
+.icon-dachy-modulowe:before {
+  content: "\e004";
+}
+.icon-podsufitki-dachowe:before {
+  content: "\e005";
+}
+.icon-systemy-rynnowe:before {
+  content: "\e006";
+}
+.icon-blachodachowki-pod-wymiar:before {
+  content: "\e007";
+}
+.icon-panele-dachowe:before {
+  content: "\e008";
+}
+.icon-akcesoria-dachowe:before {
+  content: "\e009";
+}
+.icon-system-mod:before {
+  content: "\e010";
+}
+.icon-profile-czs:before {
+  content: "\e011";
+}
+.icon-wzmocnienia-okienne:before {
+  content: "\e012";
+}
+.icon-konstrukcje-wsporcze:before {
+  content: "\e013";
+}

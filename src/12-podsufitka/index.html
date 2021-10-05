@@ -1,0 +1,140 @@
+<!-- inject(html) [templates/head.html] -->
+
+	<main class="d-flex flex-column main" id="main">
+		
+<!-- inject(html) [templates/header.html] -->
+
+	<div class="container-xxl py-5 my-auto">
+		<div class="row justify-content-between">
+			<div class="col-12 col-sm-6">
+				<h2>
+					Podsufitka dachowa
+				</h2>
+				<p class="text-secondary">
+					Dostosuj powłokę i kolor
+				</p>
+			</div>
+
+			<div class="col-12 col-sm-6 col-md-3">
+				<div class="container p-2 mb-2 rounded" style="background: #E9B449">
+					<div class="row align-items-center">
+						<div class="col-4">
+							<img src="../assets/icons/icon-star.svg" alt="" class="img-fluid">
+						</div>
+						<div class="col-8 text-end">
+							<p class="m-0">
+								Twoja obecna gwarancja wynosi: XY lat
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> <!-- end of row -->	
+
+		<div class="row">
+			<p class="col-lg-2">
+				Szerokość okapu:
+			</p>
+			<div class="col-lg-10">
+				<div class="input-cm">
+					<input type="number" min="0" value="300" class="text-center">
+				</div>
+			</div>
+		</div> <!-- end of row -->	
+
+		<div class="row">
+			<p class="col-lg-2">
+				Sposób połączenia:
+			</p>
+			<div class="col-lg-10">
+				<select name="connection" class="connection-select" id="connection-select">
+					<option value="Połączenie tradycyjne" class="connection-option">Połączenie tradycyjne</option>
+					<option value='Połączenie "w jodełkę"' class="connection-option">Połączenie "w jodełkę"</option>
+				</select>
+			</div>
+		</div> <!-- end of row -->	
+
+		<div class="row">
+			<p class="col-lg-2">
+				Sposób montażu:
+			</p>
+			<div class="col-lg-10">
+				<select name="installation-method" class="installation-method-select" id="installation-method-select">
+					<option value="Prostopadły do elewacji" class="installation-method-option">Prostopadły do elewacji</option>
+					<option value="Równolegle do połaci dachu" class="installation-method-option">Równoległy do połaci dachu</option>
+				</select>
+			</div>
+		</div> <!-- end of row -->	
+
+
+		<hr class="my-4">
+
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<img src="../assets/images/1920x1920.jpg" alt="#" class="img-fluid mb-5">
+			</div>
+
+			<div class="col-12 col-md-8">
+				<div class="container-fluid">
+					<p class="row text-secondary">
+						Wybierz rodzaj powłoki
+					</p>
+					<ul class="list-unstyled row coating-list">
+						<li class="col-12 col-sm-6 text-center p-2 coating-list__item active">
+							<h3>
+								Tradycyjna
+							</h3>
+						</li>
+						<li class="col-12 col-sm-6 text-center p-2 coating-list__item">
+							<h3>
+								Drewnopodobna
+							</h3>
+						</li>
+					</ul>
+				</div>
+
+				<div class="container-fluid">
+					<hr class="my-4">
+				</div>
+
+				<div class="container-fluid">
+					<p class="row text-secondary">
+						Wybierz kolor
+					</p>
+					<ul class="list-unstyled row colors-list">
+						<li class="col-6 col-md-3 text-center p-2 colors-list__item active">
+							<img src="../assets/images/color-7024-grafitowy.png" alt="" class="img-fluid">
+							<p class="mt-2 mb-0">
+								Nazwa koloru
+							</p>
+						</li>
+						<li class="col-6 col-md-3 text-center p-2 colors-list__item">
+							<img src="../assets/images/color-7024-grafitowy.png" alt="" class="img-fluid">
+							<p class="mt-2 mb-0">
+								Nazwa koloru
+							</p>
+						</li>
+						<li class="col-6 col-md-3 text-center p-2 colors-list__item">
+							<img src="../assets/images/color-7024-grafitowy.png" alt="" class="img-fluid">
+							<p class="mt-2 mb-0">
+								Nazwa koloru
+							</p>
+						</li>
+						<li class="col-6 col-md-3 text-center p-2 colors-list__item">
+							<img src="../assets/images/color-7024-grafitowy.png" alt="" class="img-fluid">
+							<p class="mt-2 mb-0">
+								Nazwa koloru
+							</p>
+						</li>
+					</ul>
+				</div> <!-- end of container -->	
+			</div>
+		</div> <!-- end of row -->	
+
+	</div>
+
+<!-- inject(html) [templates/back-next-buttons.html] -->
+
+	</main> <!-- end of main -->
+
+<!-- inject(html) [templates/footer.html] -->

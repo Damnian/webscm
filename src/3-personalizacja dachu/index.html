@@ -1,0 +1,71 @@
+<!-- inject(html) [templates/head.html] -->
+
+	<main class="d-flex flex-column main" id="main">
+		
+<!-- inject(html) [templates/header.html] -->
+
+	<div class="container-xxl py-5 my-auto">
+		<div class="row">
+			<div class="col-12">	
+				<h2>
+					Personalizacja dachu
+				</h2>
+				<p class="text-secondary">
+					Podaj wymiary pokrycia dachowego
+				</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<p class="col-lg-2">
+				Nachylenie połaci dachu:
+			</p>
+			<div class="col-lg-10">
+				<select name="tilt" class="tilt-select" id="tilt-select">
+					<option value="Kąt nachylenia" class="tilt-option">Kąt nachylenia</option>
+					<option value="Procent spadku" class="tilt-option">Procent spadku</option>
+					<option value="Wymiary rzeczywiste" class="tilt-option">Wymiary rzeczywiste</option>
+				</select>
+				<input type="number" min="0" max="100" value="35">
+			</div>
+		</div>
+
+		<div class="row">
+			<p class="col-lg-2">
+				Typ zabudowy:
+			</p>
+			<div class="col-lg-10">
+				<select name="building-type" class="building-type" id="building-type-select">
+					<option value="Wolnostojąca<" class="building-type-option">Wolnostojąca</option>
+					<option value="Bliźniak" class="building-type-option">Bliźniak</option>
+					<option value="Szeregowa" class="building-type-option">Szeregowa</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="row">
+			<p class="col-lg-2">
+				Dodaj lukarnę:
+			</p>
+			<div class="col-lg-10"> 
+				<input type="checkbox" id="left-dormer" name="left-dormer">
+				<label for="left-dormer">Lewa</label>
+				<input type="checkbox" id="right-dormer" name="right-dormer">
+				<label for="right-dormer">Prawa</label>
+				<input type="checkbox" id="top-dormer" name="top-dormer">
+				<label for="top-dormer">Górna</label>
+				<input type="checkbox"id="bottom-dormer" name="bottom-dormer">
+				<label for="bottom-dormer">Dolna</label>
+			</div>
+		</div>
+	</div> <!-- end of container-xxl -->
+
+	<div class="container-xxl pb-5">
+		<img src="../assets/images/1920x1080.jpg" alt="" class="img-fluid">
+	</div><!-- end of container-xxl -->
+
+<!-- inject(html) [templates/back-next-buttons.html] -->
+
+	</main> <!-- end of main -->
+
+<!-- inject(html) [templates/footer.html] -->

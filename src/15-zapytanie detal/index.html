@@ -1,0 +1,174 @@
+<!-- inject(html) [templates/head.html] -->
+
+	<main class="d-flex flex-column main" id="main">
+		
+<!-- inject(html) [templates/header.html] -->
+
+	<div class="container-xxl py-5 my-auto">
+		<div class="row">
+			<div class="col-12">
+				<h2>
+					Zapytanie ofertowe
+				</h2>
+				<p class="text-secondary">
+					Podaj dane, by znaleźć dystrybutora i wysłać zapytanie
+				</p>
+			</div>
+		</div> <!-- end of row -->	
+
+		<div class="row">
+			<div class="col-12 col-md-6">
+				<p>
+					Podaj kod pocztowy lub miasto planowanej inwestycji
+				</p>
+				<div class="row mb-3">
+					<div class="col-12 col-md-4">
+						<input type="text" class="form-control mb-3 mb-md-0">
+					</div>
+					<div class="col-6 col-md-4">
+						<button class="btn btn-success rounded text-white w-100" id="XYZ">
+							Użyj lokalizacji <i class="fas fa-map-marker-alt"></i>
+						</button>
+					</div>
+					<div class="col-6 col-md-4">
+						<button class="btn btn-success rounded text-white w-100" id="XYZ">
+							Wyszukaj
+						</button>
+					</div>
+				</div>
+
+				<div class="row mb-3">
+					<!-- w tym miejscu mapa -->	
+					<img src="../assets/images/1920x1080.jpg" alt="" class="img-fluid">
+				</div>
+
+				<div class="row mb-3">
+					<p class="text-secondary">
+						Wpisz dane kontaktowe, aby móc wysłać zapytanie
+					</p>
+					<div class="input-group mb-3">
+						<label for="inquiry-email-input" class="input-group-text w-50" id="inquiry-email-label">
+							Twój adres e-mail
+						</label>
+  					<input type="email" class="form-control" id="inquiry-email-input" placeholder="jan.kowalski@gmail.com" aria-label="jan.kowalski@gmail.com" aria-describedby="inquiry-email-label">
+					</div>
+
+					<div class="input-group mb-3">
+						<label for="inquiry-phone-input" class="input-group-text w-50" id="inquiry-phone-label">
+							Twój numer telefonu
+						</label>
+  					<input type="tel" class="form-control" id="inquiry-phone-input" placeholder="502 197 197" aria-label="502 197 197" aria-describedby="inquiry-phone-label">
+					</div>
+
+					<div class="input-group mb-3">
+						<label for="inquiry-name-input" class="input-group-text w-50" id="inquiry-name-label">
+							Twoje imie i nazwisko
+						</label>
+  					<input type="text" class="form-control" id="inquiry-name-input" placeholder="Jan Kowalski" aria-label="<Imię i nazwisko>" aria-describedby="inquiry-name-label">
+					</div>
+				</div>
+
+				<div class="row mb-3">
+					<p class="text-secondary">
+						Co chcesz dalej zrobić?
+					</p>
+					<div class="col-12">
+						<button class="btn btn-outline-dark">
+							<i class="fas fa-share-square"></i> Eksportuj zamówienie
+						</button>
+						<button class="btn btn-outline-dark">
+							<i class="fas fa-envelope"></i> Prześlij na maila
+						</button>
+					</div>
+				</div>
+			</div> <!-- end of col-6-->	
+
+			<div class="col-12 col-md-6">
+				<p class="text-secondary">
+					Wyniki
+				</p>
+				<ul class="list-unstyled">
+					<li class="row align-items-center py-2 border-bottom">
+						<div class="col-4">
+							<strong class="d-block">
+								Nazwa dystrybutora
+							</strong>
+							<small class="d-block">
+								ul. Otolińska 25
+							</small>
+							<small class="d-block">
+								09-407 Płock
+							</small>
+						</div>
+
+						<div class="col-4 text-center">
+							<small class="d-block">
+								502 197 197
+							</small>
+							<small class="d-block">
+								<a href="mailto: kontakt@budmat.com">
+									kontakt@budmat.com
+								</a>
+							</small>
+						</div>
+
+						<div class="col-4 text-end">
+							<button class="btn btn-success rounded text-white">
+								Wyślij
+							</button>
+						</div>
+					</li>
+
+					<li class="row align-items-center py-2 border-bottom">
+						<div class="col-4">
+							<strong class="d-block">
+								Nazwa dystrybutora
+							</strong>
+							<small class="d-block">
+								ul. Otolińska 25
+							</small>
+							<small class="d-block">
+								09-407 Płock
+							</small>
+						</div>
+
+						<div class="col-4 text-center">
+							<small class="d-block">
+								502 197 197
+							</small>
+							<small class="d-block">
+								<a href="mailto: kontakt@budmat.com">
+									kontakt@budmat.com
+								</a>
+							</small>
+						</div>
+
+						<div class="col-4 text-end">
+							<button class="btn btn-success rounded text-white">
+								Wyślij
+							</button>
+						</div>
+					</li>
+				</ul>
+
+				<div class="row">
+					<div class="col-12">
+						<input type="checkbox" id="agree-checkbox">
+							<small class="d-inline">
+								<label for="remember-checkbox" class="d-inline">
+										Wyrażam zgodę na przetwarzanie moich danych osobowych lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+								</label>
+							</small>
+					</div>
+				</div>
+			</div> <!-- end of col-6-->	
+
+		</div> <!-- end of row-->	
+
+	</div> <!-- end of container-xxl z góry strony-->	
+
+<!-- inject(html) [templates/back-next-buttons.html] -->
+
+	</main> <!-- end of main -->
+
+<!-- inject(html) [templates/footer.html] -->

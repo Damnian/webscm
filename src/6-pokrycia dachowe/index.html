@@ -1,0 +1,123 @@
+<!-- inject(html) [templates/head.html] -->
+
+	<main class="d-flex flex-column main" id="main">
+
+<!-- inject(html) [templates/header.html] -->
+
+	<div class="container-xxl py-5 my-auto">
+		<!-- uzależnić nazwę h2 od wyboru w poprzednik kroku -->
+		<div class="row">
+			<div class="col-12">
+				<h2>
+					< Nazwa blachodachówki modułowej >
+				</h2>
+				<p class="text-secondary">
+					Wybierz interesującą Cię powłokę oraz kolorystykę
+				</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-6 mb-3">
+				<!-- grafikę domu należy uzależnić od klikniętej poniżej powłoki i koloru-->
+				<img src="../assets/images/1920x1920.jpg" alt="#" class="img-fluid" data-bs-toggle="modal" data-bs-target="#lightbox">
+
+				<div class="modal fade" id="lightbox" tabindex="-1" aria-labelledby="NazwaBlachodachówki" aria-hidden="true">
+				  <div class="modal-dialog modal-dialog-centered modal-xl ">
+				    <div class="modal-content">
+				      <div class="modal-header p-2">
+				        <h5 class="modal-title" id="NazwaBlachodachówki">< Nazwa Blachodachówki ></h5>
+				        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				      </div>
+				      <div class="modal-body p-2">
+				        <img src="../assets/images/1920x1080.jpg" alt="#" class="img-fluid">
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+
+			<div class="col-lg-6">
+				<!-- grafikę modułówki należy uzależnić od klikniętej poniżej powłoki -->
+				<!-- zmienić klasę dla img -->
+				<div class="row justify-content-center mb-3">
+					<img src="../assets/images/arkusz-venecja.png" alt="" class="img-fluid">
+				</div>
+
+				<p class="text-secondary">
+					Wybierz powłokę
+				</p>
+				<ul class="list-unstyled row justify-content-center mb-3 coating-list">
+					<li class="col-6 col-sm-3 text-center py-2 coating-list__item active">
+						<img src="../assets/icons/icon-x-matt.svg" alt="" class="img-fluid coating-list__img">
+						<button class="btn d-block my-1 mx-auto" data-bs-trigger="focus" data-bs-toggle="popover" title="X-MATT" data-bs-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+							<i class="fas fa-info-circle"></i>
+						</button>
+					</li>
+					<li class="col-6 col-sm-3 text-center py-2 coating-list__item">
+						<img src="../assets/icons/icon-d-matt.svg" alt="" class="img-fluid coating-list__img">
+						<button class="btn d-block my-1 mx-auto" data-bs-trigger="focus" data-bs-toggle="popover" title="D-MATT" data-bs-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+							<i class="fas fa-info-circle"></i>
+						</button>
+					</li>
+					<li class="col-6 col-sm-3 text-center py-2 coating-list__item">
+						<img src="../assets/icons/icon-ideal-satin.svg" alt="" class="img-fluid coating-list__img">
+						<button class="btn d-block my-1 mx-auto" data-bs-trigger="focus" data-bs-toggle="popover" title="IDEAL SATIN" data-bs-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+							<i class="fas fa-info-circle"></i>
+						</button>
+					</li>
+					<li class="col-6 col-sm-3 text-center py-2 coating-list__item">
+						<img src="../assets/icons/icon-ideal-matt.svg" alt="" class="img-fluid coating-list__img">
+						<button class="btn d-block my-1 mx-auto" data-bs-trigger="focus" data-bs-toggle="popover" title="IDEAL-MATT" data-bs-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+							<i class="fas fa-info-circle"></i>
+						</button>
+					</li>
+				</ul>
+
+				<hr class="d-sm-none">
+
+				<p class="text-secondary">
+					Wybierz kolor
+				</p>
+				<ul class="list-unstyled row justify-content-sm-center colors-list">
+					<li class="col-4 col-sm-2 text-center py-2 colors-list__item active">
+						<img src="../assets/images/color-7024-grafitowy.png" alt="" class="img-fluid">
+						<p class="m-0">
+							Grafitowy<br>7024
+						</p>
+					</li>
+					<li class="col-4 col-sm-2 text-center py-2 colors-list__item">
+						<img src="../assets/images/color-8004-ceglasty.png" alt="" class="img-fluid">
+						<p class="m-0">
+							Ceglasty<br>8004
+						</p>
+					</li>
+					<li class="col-4 col-sm-2 text-center py-2 colors-list__item">
+						<img src="../assets/images/color-9005-czarny.png" alt="" class="img-fluid">
+						<p class="m-0">
+							Czarny<br>9005
+						</p>
+					</li>
+					<li class="col-4 col-sm-2 text-center py-2 colors-list__item">
+						<img src="../assets/images/color-8017-brazowy.png" alt="" class="img-fluid">
+						<p class="m-0">
+							Brązowy<br>8017	
+						</p>
+					</li>
+					<li class="col-4 col-sm-2 text-center py-2 colors-list__item">
+						<img src="../assets/images/color-7016-antracytowy.png" alt="" class="img-fluid">
+						<p class="m-0">
+							Antracytowy<br>7016
+						</p>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+	</div><!-- end of container-xxl -->	
+
+<!-- inject(html) [templates/back-next-buttons.html] -->
+
+	</main> <!-- end of main -->
+
+<!-- inject(html) [templates/footer.html] -->

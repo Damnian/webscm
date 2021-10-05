@@ -1,0 +1,92 @@
+<!-- inject(html) [templates/head.html] -->
+
+	<main class="d-flex flex-column main main-home" id="main">
+
+<!-- inject(html) [templates/header.html] -->
+
+		<div class="container-xxl d-flex flex-grow-1 flex-shrink-1">
+			<div class="row flex-grow-1 flex-shrink-1 align-items-center">
+				<div class="col-lg-5 px-5 py-5 d-flex flex-column order-2 order-lg-1 flex-grow-1 flex-shrink-1 dealer">
+					<h2>
+						Jestem<br>
+						Dealerem / Dekarzem
+					</h2>
+
+					<hr>
+
+					<label for="login-input">
+						Login / email
+					</label>
+					<input type="email" class="mb-3" id="login-input" placeholder="jan.kowalski@gmail.com">
+
+					<label for="password-input">
+						Hasło
+					</label>
+					<input type="text" class="mb-3" id="password-input" placeholder="*************">
+
+					<div class="row my-3">
+						<div class="col-md-6">
+							<input type="checkbox" id="remember-checkbox">
+							<label for="remember-checkbox">
+								Zapamiętaj mnie
+							</label>
+						</div>
+						
+						<div class="col-md-6">
+							<a href="#" id="forgotten-password">
+								Zapomniałeś hasła?
+							</a>
+						</div>
+					</div>
+
+					<div class="row my-3">
+						<div class="col-md-6">
+							<button class="btn btn-success rounded-pill fit-content px-5 text-white" id="login-btn">
+								Zaloguj
+							</button>
+						</div>
+						<div class="col-md-6">
+							<p>
+								Nie masz konta?<br>
+								<a href="#">
+									Zarejestruj się!
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-7 px-5 py-5 d-flex flex-column order-1 order-lg-2 flex-grow-1 flex-shrink-1 investor">
+					<h2>
+						Jestem<br>
+						Inwestorem
+					</h2>
+
+					<hr>
+
+					<ul class="list-unstyled investor__benefits-list">
+						<li>
+							Skonfiguruj swój dach
+						</li>
+						<li>
+							Znajdź najbliższego dealera
+						</li>
+						<li>
+							Zapytaj o darmową wycenę
+						</li>
+						<li>
+							Nie potrzeba rejestracji
+						</li>
+					</ul>
+
+					<button class="btn btn-success rounded-pill fit-content px-5 text-white" id="XYZ">
+						Przejdź do konfiguratora
+					</button>
+
+				</div>
+			</div>
+		</div>
+	</main> <!-- end of main -->
+
+
+<!-- inject(html) [templates/footer.html] -->

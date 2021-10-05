@@ -1,0 +1,78 @@
+
+		<header class="header">
+			<div class="header__bar--navy">
+				<div class="container-xxl">
+					<div class="row justify-content-between align-items-center py-2">
+						<!-- rodzaj logo uzależnić od widoku -->
+						<!-- jeśli granatowe, to logo białe -->
+						<div class="col">
+							<a href="/1-home/">
+								<img src="../assets/images/logo-budmat-poziom.png" alt="Logo Budmat Bogdan Więcek" class="img-fluid">
+							</a>
+						</div>
+
+						<!-- zaloguj uzależnić od widoku  (if main-home -> hide) -->
+						<div class="col text-end">
+							<a href="#" class="link-light mx-3">
+								Zaloguj
+							</a>
+<!-- 						</div>
+
+						<div class="col-3 col-md-2 col-lg-2"> -->
+							<nav class="language-nav d-inline-block" id="language-nav">
+								<select name="language" class="form-select w-auto" id="language-select">
+							    <option value="PL" class="language-option">PL</option>
+							    <option value="EN" class="language-option">EN</option>
+							    <option value="DE" class="language-option">DE</option>
+								</select>
+							</nav>
+						</div>
+					</div> <!-- end of row -->
+				</div>
+			</div>
+
+			<!-- background bar uzależnić od widoku -->
+			<!-- jeśli home, to brak poniższego -->
+			<div class="header__bar--dark-navy text-white">
+				<div class="container-xxl">
+				<!-- navigację uzależnić od widoku (if main-home -> hide) -->
+
+					<nav class="navbar roof-configurator-nav" id="roof-configurator-nav">
+						<div class="col-12 text-end">
+							<button class="d-lg-none navbar-toggler navbar-dark ms-auto" 
+											type="button" 
+											data-bs-toggle="collapse" 
+											data-bs-target="#navbarToggleExternalContent" 
+											aria-controls="navbarToggleExternalContent" 
+											aria-expanded="false" 
+											aria-label="Przełączaj nawigację">
+	      				<span class="navbar-toggler-icon"></span>
+	    				</button>
+						</div>
+
+						<div class="collapse d-lg-block col-12" id="navbarToggleExternalContent">
+							<ul class="list-unstyled text-center m-0">
+								<li class="px-2 py-1 roof-configurator-nav__item active">
+									Personalizacja dachu
+								</li>
+								<li class="px-2 py-1 roof-configurator-nav__item">
+									Pokrycie dachowe
+								</li>
+								<li class="px-2 py-1 roof-configurator-nav__item">
+									Akcesoria
+								</li>
+								<li class="px-2 py-1 roof-configurator-nav__item">
+									Systemy rynnowe
+								</li>
+								<li class="px-2 py-1 roof-configurator-nav__item">
+									Podsufitka
+								</li>
+								<li class="px-2 py-1 roof-configurator-nav__item">
+									Podsumowanie
+								</li>
+							</ul>
+						</div>
+					</nav>
+			</div> <!-- end of container-xxl -->
+		</div>
+	</header> 
