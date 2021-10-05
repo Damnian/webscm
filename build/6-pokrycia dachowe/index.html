@@ -56,31 +56,37 @@
 				<div class="container-xxl">
 				<!-- navigację uzależnić od widoku (if main-home -> hide) -->
 
-					<nav class="navbar roof-personalization-nav" id="roof-personalization-nav">
+					<nav class="navbar roof-configurator-nav" id="roof-configurator-nav">
 						<div class="col-12 text-end">
-							<button class="d-lg-none navbar-toggler navbar-dark ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+							<button class="d-lg-none navbar-toggler navbar-dark ms-auto" 
+											type="button" 
+											data-bs-toggle="collapse" 
+											data-bs-target="#navbarToggleExternalContent" 
+											aria-controls="navbarToggleExternalContent" 
+											aria-expanded="false" 
+											aria-label="Przełączaj nawigację">
 	      				<span class="navbar-toggler-icon"></span>
 	    				</button>
 						</div>
 
-						<div class="collapse d-lg-block col-lg-12" id="navbarToggleExternalContent">
-							<ul class="list-unstyled m-0">
-								<li class="px-2">
+						<div class="collapse d-lg-block col-12" id="navbarToggleExternalContent">
+							<ul class="list-unstyled text-center m-0">
+								<li class="px-2 py-1 roof-configurator-nav__item active">
 									Personalizacja dachu
 								</li>
-								<li class="px-2">
+								<li class="px-2 py-1 roof-configurator-nav__item">
 									Pokrycie dachowe
 								</li>
-								<li class="px-2">
+								<li class="px-2 py-1 roof-configurator-nav__item">
 									Akcesoria
 								</li>
-								<li class="px-2">
+								<li class="px-2 py-1 roof-configurator-nav__item">
 									Systemy rynnowe
 								</li>
-								<li class="px-2">
+								<li class="px-2 py-1 roof-configurator-nav__item">
 									Podsufitka
 								</li>
-								<li class="px-2">
+								<li class="px-2 py-1 roof-configurator-nav__item">
 									Podsumowanie
 								</li>
 							</ul>
@@ -134,70 +140,70 @@
 				<p class="text-secondary">
 					Wybierz powłokę
 				</p>
-				<div class="row justify-content-center mb-3">
-					<div class="col-6 col-sm-3 text-center">
-						<img src="../assets/icons/icon-x-matt.svg" alt="" class="img-fluid">
+				<ul class="list-unstyled row justify-content-center mb-3 coating-list">
+					<li class="col-6 col-sm-3 text-center py-2 coating-list__item active">
+						<img src="../assets/icons/icon-x-matt.svg" alt="" class="img-fluid coating-list__img">
 						<button class="btn d-block my-1 mx-auto" data-bs-trigger="focus" data-bs-toggle="popover" title="X-MATT" data-bs-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
 							<i class="fas fa-info-circle"></i>
 						</button>
-					</div>
-					<div class="col-6 col-sm-3 text-center">
-						<img src="../assets/icons/icon-d-matt.svg" alt="" class="img-fluid">
+					</li>
+					<li class="col-6 col-sm-3 text-center py-2 coating-list__item">
+						<img src="../assets/icons/icon-d-matt.svg" alt="" class="img-fluid coating-list__img">
 						<button class="btn d-block my-1 mx-auto" data-bs-trigger="focus" data-bs-toggle="popover" title="D-MATT" data-bs-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
 							<i class="fas fa-info-circle"></i>
 						</button>
-					</div>
-					<div class="col-6 col-sm-3 text-center">
-						<img src="../assets/icons/icon-ideal-satin.svg" alt="" class="img-fluid">
+					</li>
+					<li class="col-6 col-sm-3 text-center py-2 coating-list__item">
+						<img src="../assets/icons/icon-ideal-satin.svg" alt="" class="img-fluid coating-list__img">
 						<button class="btn d-block my-1 mx-auto" data-bs-trigger="focus" data-bs-toggle="popover" title="IDEAL SATIN" data-bs-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
 							<i class="fas fa-info-circle"></i>
 						</button>
-					</div>
-					<div class="col-6 col-sm-3 text-center">
-						<img src="../assets/icons/icon-ideal-matt.svg" alt="" class="img-fluid">
+					</li>
+					<li class="col-6 col-sm-3 text-center py-2 coating-list__item">
+						<img src="../assets/icons/icon-ideal-matt.svg" alt="" class="img-fluid coating-list__img">
 						<button class="btn d-block my-1 mx-auto" data-bs-trigger="focus" data-bs-toggle="popover" title="IDEAL-MATT" data-bs-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
 							<i class="fas fa-info-circle"></i>
 						</button>
-					</div>
-				</div>
+					</li>
+				</ul>
 
 				<hr class="d-sm-none">
 
 				<p class="text-secondary">
 					Wybierz kolor
 				</p>
-				<div class="row justify-content-sm-center">
-					<div class="col-4 col-sm-2 text-center">
+				<ul class="list-unstyled row justify-content-sm-center colors-list">
+					<li class="col-4 col-sm-2 text-center py-2 colors-list__item active">
 						<img src="../assets/images/color-7024-grafitowy.png" alt="" class="img-fluid">
-						<p>
+						<p class="m-0">
 							Grafitowy<br>7024
 						</p>
-					</div>
-					<div class="col-4 col-sm-2 text-center">
+					</li>
+					<li class="col-4 col-sm-2 text-center py-2 colors-list__item">
 						<img src="../assets/images/color-8004-ceglasty.png" alt="" class="img-fluid">
-						<p>
+						<p class="m-0">
 							Ceglasty<br>8004
 						</p>
-					</div>
-					<div class="col-4 col-sm-2 text-center">
+					</li>
+					<li class="col-4 col-sm-2 text-center py-2 colors-list__item">
 						<img src="../assets/images/color-9005-czarny.png" alt="" class="img-fluid">
-						<p>
+						<p class="m-0">
 							Czarny<br>9005
 						</p>
-					</div>
-					<div class="col-4 col-sm-2 text-center">
+					</li>
+					<li class="col-4 col-sm-2 text-center py-2 colors-list__item">
 						<img src="../assets/images/color-8017-brazowy.png" alt="" class="img-fluid">
-						<p>
+						<p class="m-0">
 							Brązowy<br>8017	
 						</p>
-					</div>
-					<div class="col-4 col-sm-2 text-center">
+					</li>
+					<li class="col-4 col-sm-2 text-center py-2 colors-list__item">
 						<img src="../assets/images/color-7016-antracytowy.png" alt="" class="img-fluid">
-						<p>
+						<p class="m-0">
 							Antracytowy<br>7016
 						</p>
-					</div>
-				</div>
+					</li>
+				</ul>
 
 			</div>
 		</div>

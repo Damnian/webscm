@@ -56,31 +56,37 @@
 				<div class="container-xxl">
 				<!-- navigację uzależnić od widoku (if main-home -> hide) -->
 
-					<nav class="navbar roof-personalization-nav" id="roof-personalization-nav">
+					<nav class="navbar roof-configurator-nav" id="roof-configurator-nav">
 						<div class="col-12 text-end">
-							<button class="d-lg-none navbar-toggler navbar-dark ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+							<button class="d-lg-none navbar-toggler navbar-dark ms-auto" 
+											type="button" 
+											data-bs-toggle="collapse" 
+											data-bs-target="#navbarToggleExternalContent" 
+											aria-controls="navbarToggleExternalContent" 
+											aria-expanded="false" 
+											aria-label="Przełączaj nawigację">
 	      				<span class="navbar-toggler-icon"></span>
 	    				</button>
 						</div>
 
-						<div class="collapse d-lg-block col-lg-12" id="navbarToggleExternalContent">
-							<ul class="list-unstyled m-0">
-								<li class="px-2">
+						<div class="collapse d-lg-block col-12" id="navbarToggleExternalContent">
+							<ul class="list-unstyled text-center m-0">
+								<li class="px-2 py-1 roof-configurator-nav__item active">
 									Personalizacja dachu
 								</li>
-								<li class="px-2">
+								<li class="px-2 py-1 roof-configurator-nav__item">
 									Pokrycie dachowe
 								</li>
-								<li class="px-2">
+								<li class="px-2 py-1 roof-configurator-nav__item">
 									Akcesoria
 								</li>
-								<li class="px-2">
+								<li class="px-2 py-1 roof-configurator-nav__item">
 									Systemy rynnowe
 								</li>
-								<li class="px-2">
+								<li class="px-2 py-1 roof-configurator-nav__item">
 									Podsufitka
 								</li>
-								<li class="px-2">
+								<li class="px-2 py-1 roof-configurator-nav__item">
 									Podsumowanie
 								</li>
 							</ul>
@@ -121,7 +127,7 @@
 		<div class="row">
 			<div class="container-fluid">
 				<ul class="list-unstyled row covering-list">
-					<li class="col-md-6 col-lg-6 pb-3 covering-list__item position-relative">
+					<li class="col-md-6 col-lg-6 pb-3 covering-list__item active">
 						<img src="../assets/images/podsufitka-stalowa.jpg" alt="" class="rounded img-fluid">
 						<div class="rounded shadow covering-list__overlay">
 							<h3 class="m-3 text-white">
@@ -140,10 +146,11 @@
 						</div>
 					</li>
 					<li class="col-md-6 col-lg-6 pb-3 covering-list__item">
-						<div class="rounded shadow bg-secondary p-2 text-white">
-						<h3 class="my-3">
-							Brak podsufitki
-						</h3>
+						<img src="../assets/images/budmat-zaslepka.png" alt="" class="rounded img-fluid">
+						<div class="rounded shadow covering-list__overlay">
+							<h3 class="m-3 text-white">
+								Brak podsufitki
+							</h3>
 						</div>
 					</li>
 				</ul>

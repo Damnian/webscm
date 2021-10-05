@@ -56,31 +56,37 @@
 				<div class="container-xxl">
 				<!-- navigację uzależnić od widoku (if main-home -> hide) -->
 
-					<nav class="navbar roof-personalization-nav" id="roof-personalization-nav">
+					<nav class="navbar roof-configurator-nav" id="roof-configurator-nav">
 						<div class="col-12 text-end">
-							<button class="d-lg-none navbar-toggler navbar-dark ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+							<button class="d-lg-none navbar-toggler navbar-dark ms-auto" 
+											type="button" 
+											data-bs-toggle="collapse" 
+											data-bs-target="#navbarToggleExternalContent" 
+											aria-controls="navbarToggleExternalContent" 
+											aria-expanded="false" 
+											aria-label="Przełączaj nawigację">
 	      				<span class="navbar-toggler-icon"></span>
 	    				</button>
 						</div>
 
-						<div class="collapse d-lg-block col-lg-12" id="navbarToggleExternalContent">
-							<ul class="list-unstyled m-0">
-								<li class="px-2">
+						<div class="collapse d-lg-block col-12" id="navbarToggleExternalContent">
+							<ul class="list-unstyled text-center m-0">
+								<li class="px-2 py-1 roof-configurator-nav__item active">
 									Personalizacja dachu
 								</li>
-								<li class="px-2">
+								<li class="px-2 py-1 roof-configurator-nav__item">
 									Pokrycie dachowe
 								</li>
-								<li class="px-2">
+								<li class="px-2 py-1 roof-configurator-nav__item">
 									Akcesoria
 								</li>
-								<li class="px-2">
+								<li class="px-2 py-1 roof-configurator-nav__item">
 									Systemy rynnowe
 								</li>
-								<li class="px-2">
+								<li class="px-2 py-1 roof-configurator-nav__item">
 									Podsufitka
 								</li>
-								<li class="px-2">
+								<li class="px-2 py-1 roof-configurator-nav__item">
 									Podsumowanie
 								</li>
 							</ul>
@@ -119,8 +125,8 @@
 		</div>
 
 		<div class="row">
-			<div class="col-md-4">
-				<div class="mb-3 overflow-hidden rounded shadow position-relative">
+			<div class="col-md-4 package">
+				<div class="mb-3 overflow-hidden rounded shadow position-relative package__item active">
 					<header class="text-white m-0 p-2" style="background: #E9B449; min-height: 80px;">
 						<h2 class="m-0">
 							Pakiet Prestige
@@ -129,27 +135,27 @@
 					<img src="../assets/images/750x500.jpg" alt="" class="img-fluid">
 					<img src="../assets/icons/icon-10-lat-gwarancji.svg" alt="" class="img-fluid h-25 position-absolute bottom-0 end-0 m-2">
 				</div>
-				<p>
+				<p class="text-secondary">
 					Wybierając ten pakiet, zyskujesz:
 				</p>
-				<ul>
-					<li>
+				<ul class="list-unstyled package__benefits-list">
+					<li class="check">
 						Dodatkowe 10 lat gwarancji na dach
 					</li>
-					<li>
+					<li class="check">
 						Niepowtarzalne dedykowane obróbki
 					</li>
-					<li>
+					<li class="check">
 						Najwyższa jakoś produktów
 					</li>
-					<li>
+					<li class="check">
 						Najlepsze techniczne rozwiązania
 					</li>
 				</ul>
 			</div>
 
-			<div class="col-md-4">
-				<div class="mb-3 overflow-hidden rounded shadow position-relative">
+			<div class="col-md-4 package">
+				<div class="mb-3 overflow-hidden rounded shadow position-relative package__item">
 					<header class="text-white m-0 p-2" style="background: #A5A5A5; min-height: 80px;">
 						<h2 class="m-0">
 							Pakiet Premium
@@ -158,27 +164,29 @@
 					<img src="../assets/images/750x500.jpg" alt="" class="img-fluid">
 					<img src="../assets/icons/icon-5-lat-gwarancji.svg" alt="" class="img-fluid h-25 position-absolute bottom-0 end-0 m-2">
 				</div>
-				<p>
+				<p class="text-secondary">
 					Wybierając ten pakiet, zyskujesz:
 				</p>
-				<ul>
-					<li>
+				<ul class="list-unstyled package__benefits-list">
+					<li class="check">
 						Dodatkowe 5 lat gwarancji na dach
 					</li>
-					<li>
+					<li class="check">
 						Obróbki dopasowane do dachu
 					</li>
-					<li>
+					<li class="check">
 						Wysoka jakość produktów
 					</li>
-					<li class="text-black-50">
+					<!--zastanawiam się, czy klasę "not-check" w ogóle publikować
+						w sensie jeśli jakiejś korzyści nie będzie w danym pakiecie, to po prostu jej nie wymienimy -->
+					<li class="not-check text-black-50">
 						Najlepsze techniczne rozwiązania
 					</li>
 				</ul>
 			</div>
 
-			<div class="col-md-4">
-				<div class="mb-3 overflow-hidden rounded shadow">
+			<div class="col-md-4 package">
+				<div class="mb-3 overflow-hidden rounded shadow package__item">
 					<header class="text-white m-0 p-2" style="background: #4A2908; min-height: 80px;">
 						<h2 class="m-0">
 							Pakiet Standard
@@ -189,20 +197,20 @@
 					</header>
 					<img src="../assets/images/750x500.jpg" alt="" class="img-fluid">
 				</div>
-				<p>
+				<p class="text-secondary">
 					Wybierając ten pakiet, zyskujesz:
 				</p>
-				<ul>
-					<li>
+				<ul class="list-unstyled package__benefits-list">
+					<li class="check">
 						Dopasowanie produktów do Twoich potrzeb
 					</li>
-					<li>
+					<li class="check">
 						Wysoka jakość produktów
 					</li>
-					<li class="text-black-50">
+					<li class="not-check text-black-50">
 						Lorem ipsum dolor amet
 					</li>
-					<li class="text-black-50">
+					<li class="not-check text-black-50">
 						Lorem ipsum dolor amet
 					</li>
 				</ul>
